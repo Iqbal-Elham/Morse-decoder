@@ -14,27 +14,28 @@ ALL_MORSE_CODE = {
 def decode_char(char)
   ALL_MORSE_CODE[char]
 end
+
 def decode_word(word)
-    word_arr = word.split
-    compound = ''
+  word_arr = word.split
+  compound = ''
 
-    word_arr.each do |char|
-      compound += decode_char(char)
-    end
-
-    compound
+  word_arr.each do |char|
+    compound += decode_char(char)
   end
 
-  def decode_message(message)
-    string_arr = message.split('  ')
-    message = ''
+  compound
+end
 
-    string_arr.each do |word|
-      message += decode_word(word)
-      message += ' '
-    end
+def decode_message(message)
+  string_arr = message.split('  ')
+  message = ''
 
-    message.strip
+  string_arr.each do |word|
+    message += decode_word(word)
+    message += ' '
   end
 
-  puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+  message.strip
+end
+
+puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
