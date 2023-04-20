@@ -14,3 +14,13 @@ ALL_MORSE_CODE = {
 def decode_char(char)
   ALL_MORSE_CODE[char]
 end
+def decode_word(word)
+    word_arr = word.split
+    compound = ''
+  
+    word_arr.each do |char|
+      compound += decode_char(char)
+    end
+  
+    compound
+  end
