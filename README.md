@@ -79,7 +79,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Feliverse/code-morse-decoder.git
+  git clone https://github.com/iqbal-elham/code-morse-decoder.git
 ```
 
 ### Install
@@ -138,7 +138,7 @@ Example command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Feliverse/code-morse-decoder/issues).
+Feel free to check the [issues page](https://github.com/iqbal-elham/code-morse-decoder/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
